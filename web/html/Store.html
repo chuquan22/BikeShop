@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="ControllerStore?s=displayAllStore">list all</a>
+        <form action="ControllerStore" method="Post">
+            <p><input type="hidden" name="s" value="insertStore"></p>
+            <h3>FORM ADD STORE INFORMATIONS</h3>
+            <table>
+                <tr>
+                    <td><label for="id">StoreID</label></td>
+                    <td><input type="number" name="id" id="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="sName">StoreName</label></td>
+                    <td><input type="text" name="sName" id="sName"></td>
+                </tr>
+               <tr>
+                    <td><label for="phone">phone</label></td>
+                    <td><input type="number" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email</label></td>
+                    <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="street">street</label></td>
+                    <td><input type="text" name="street" id="street"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">city</label></td>
+                    <td><input type="text" name="city" id="city"></td>
+                </tr>
+                <tr>
+                    <td>state</td>
+                    <td><select name="state">
+                            <option value="NY">NY</option>
+                            <option value="CA">CA</option>
+                            <option value="TX">TX</option>
+                        </select></td>
+                </tr>
+                 <tr>
+                    <td>Zip Code</td>
+                    <td><select name="zipCode">
+                            <option value="95060">95060</option>
+                            <option value="11010">11010</option>
+                            <option value="91010">91010</option>
+                        </select></td>
+                </tr>
+                
+            </table>
+            <input type="submit" name="submit">
+        </form>
+    </body>
+</html>

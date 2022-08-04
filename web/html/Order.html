@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="ControllerOrder?s=displayAllOrder">list all</a>
+        <form action="ControllerOrder" method="POST">
+            <table>
+                    <tr>
+                        <td><label for="id">orderID</label></td>
+                        <td><input type="number"  name="id" id="id"></td>
+                    </tr>
+                    <tr>
+                        <td>CustomerID</td>
+                        <td><select name="CustomerID">
+                            <option value="1">Debra Burks</option>
+                            <option value="2">Kasha Todd</option>
+                            <option value="3">Tameka Fisher</option>
+                            <option value="4">Daryl Spence</option>
+                            <option value="5">Charolette Rice</option>
+                            <option value="6">Lyndsey Bean</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>OrderStatus</td>
+                    <td><select name="OrderStatus">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="orderDate">orderDate</label></td>
+                        <td><input type="date" name="orderDate" id="orderDate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="requiredDate">requiredDate</label></td>
+                        <td><input type="date" name="requiredDate" id="requiredDate"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="shippedDate">shippedDate</label></td>
+                        <td><input type="date" name="shippedDate" id="shippedDate"></td>
+                    </tr>
+                    <tr>
+                        <td>storeID</td>
+                    <td><select name="storeID">
+                            <option value="1">Santa Cruz Bikes</option>
+                            <option value="2">Baldwin Bikes</option>
+                            <option value="3">Rowlett Bikes</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>staffID</td>
+                    <td><select name="staffID">
+                            <option value="1">Rowlett Bikes</option>
+                            <option value="2">Mireya Copeland</option>
+                            <option value="3">Genna Serrano</option>
+                            <option value="4">Genna Serrano</option>
+                            <option value="5">Jannette David</option>
+                        </select></td>
+                    </tr>
+            </table>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </body>
+</html>

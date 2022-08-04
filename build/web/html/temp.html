@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table border="1">
+            <caption>list of orders</caption>
+            <thead>
+                <tr>
+                    <th>order_id</th>
+                    <th>item_id</th>
+                    <th>product_id</th>
+                    <th>quantity</th>
+                    <th>list_price</th>
+                    <th>discount</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="ControllerStaff?s=update"></a></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="ControllerStocks" method="Post">
+            <p><input type="hidden" name="s" value="updateStock"></p>
+            <h3>FORM ADD STORE INFORMATIONS</h3>
+            <table>
+                <tr>
+                    <td>Store ID</td>
+                    <td><select name="sid" id="sid">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td>Product ID</td>
+                    <td><select name="pid" id="pid">
+                            <option value="1">Trek 820 - 2016</option>
+                            <option value="2">Ritchey Timberwolf Frameset - 2016</option>
+                            <option value="3">Surly Wednesday Frameset - 2016</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><label for="quantity">quantity</label></td>
+                    <td><input type="number" value="" name="quantity" id="quantity"></td>
+                </tr>
+
+            </table>
+            <input type="submit" name="submit">
+        </form>

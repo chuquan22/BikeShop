@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="ControllerStaff?s=displayAllStaff">list all</a>
+        <form action="ControllerStaff" method="Post">
+       <!-- <form action="ControllerStaff?s=insertStaff" method="Post"> -->
+            
+            <p><input type="hidden" name="s" value="insertStaff"></p>
+            <h3>FORM ADD STAFF INFORMATIONS</h3>
+            <table>
+                <tr>
+                    <td><label for="id">StaffID</label></td>
+                    <td><input type="number" name="id" id="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="fName">firstName</label></td>
+                    <td><input type="text" name="fName" id="fName"></td>
+                </tr>
+                <tr>
+                    <td><label for="lName">lastName</label></td>
+                    <td><input type="text" name="lName" id="lName"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">phone</label></td>
+                    <td><input type="number" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td>active</td>
+                    <td>
+                        <input type="radio" name="active" value="1">Active
+                        <input type="radio" name="active" value="0">Deactive
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store ID</td>
+                    <td><select name="storeID">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>ManagerID</td>
+                    <td><select name="managerID">
+                            <option value="1">Fabiola</option>
+                            <option value="2">Mireya</option>
+                            <option value="5">Jannette</option>
+                        </select></td>
+                </tr>
+            </table>
+            <input type="submit" name="submit">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+
+</html>

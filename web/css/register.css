@@ -1,0 +1,42 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+body {
+background: #ddd
+}
+.actionForm {
+max-width: 600px;
+background-color: yellowgreen;
+margin: 0 auto;
+display: block;
+margin-top: 50px;
+padding: 20px;
+border: 1px solid black;
+}
+.actionForm input[type="text"],
+.actionForm input[type="email"],
+.actionForm input[type="password"]
+{
+padding: 10px;
+border: 1px solid #eee;
+border-radius: 5px;
+width: 90%;
+}
+
+.actionForm table tr input{
+padding: 10px;
+border: 1px solid #eee;
+border-radius: 5px;
+width: 90%;
+}
+
+.actionForm button[type="submit"] {
+padding: 10px;
+margin-left: 40%;
+background: blue;
+color: #fff;
+border: 0;
+outline: 0;
+}

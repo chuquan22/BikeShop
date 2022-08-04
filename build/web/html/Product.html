@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <p><a href="ControllerProduct?s=displayAllProduct">list all</a>
+        <form action="ControllerProduct" method="Post">
+            <p><input type="hidden" name="s" value="insertProduct"></p>
+            <h3>FORM ADD PRODUCTS INFORMATIONS</h3>
+            <table>
+                <tr>
+                    <td><label for="id">ProductID</label></td>
+                    <td><input type="number" name="id" id="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="pName">productName</label></td>
+                    <td><input type="text" name="pName" id="pName"></td>
+                </tr>
+                <tr>
+                    <td><label for="modelYear">modelYear</label></td>
+                    <td><input type="number" name="modelYear" id="modelYear"></td>
+                </tr>
+                <tr>
+                    <td><label for="listPrice">listPrice</label></td>
+                    <td><input type="number" name="listPrice" id="listPrice"></td>
+                </tr>
+                <tr>
+                     <td>brandName</td>
+                    <td><select name="brandName">
+                            <option value="Trek">Trek</option>
+                            <option value="Electra">Electra</option>
+                            <option value="Haro">Haro</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>categoryName</td>
+                    <td><select name="categoryName">
+                            <option value="Mountain Bikes">Mountain Bikes</option>
+                            <option value="Electric Bikes">Electric Bikes</option>
+                            <option value="Comfort Bicycles">Comfort Bicycles</option>
+                        </select></td>
+                </tr>
+
+            </table>
+            <input type="submit" name="submit">
+            <input type="reset" name="reset">
+        </form>
+    </body>
+</html>

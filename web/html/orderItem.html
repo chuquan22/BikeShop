@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="ControllerOrderItem?s=displayAllOrderItem">list all</a>
+        <form action="ControllerOrderItem" method="POST">
+            <p><input type="hidden" name="s" value="insertOrderItem"></p>
+            <table>
+               
+                    <tr>
+                        <td>orderID</td>
+                        <td><select name="CustomerID">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">itemID</label></td>
+                        <td><input type="number"  name="id" id="id"></td>
+                    </tr>
+                    <tr>
+                        <td>productID</td>
+                        <td><select name="productID">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="quantity">quantity</label></td>
+                        <td><input type="number"  name="quantity" id="quantity"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ListPrice">ListPrice</label></td>
+                        <td><input type="number"  name="ListPrice" id="ListPrice" step="0.01"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Discount">Discount</label></td>
+                        <td><input type="number"  name="Discount" id="Discount" step="0.01"></td>
+                    </tr>
+                    
+            </table>
+            <input type="submit" name="submit" >
+        </form>
+    </body>
+</html>
